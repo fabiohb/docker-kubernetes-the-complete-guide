@@ -1,0 +1,23 @@
+{
+    "AWSEBDockerrunVersion": 2,
+    "conteinerDefinitions": [
+        {
+            "name": "client",
+            "image": "fabiohb/multi-complex-client",
+            "hostname": "client",
+            "essentioal": false
+        },
+        {
+            "name": "server",
+            "image": "fabiohb/multi-complex-server",
+            "hostname": "api",
+            "essentioal": false
+        },
+        {
+            "name": "worker",
+            "image": "fabiohb/multi-complex-worker",
+            "hostname": "worker",
+            "essentioal": false
+        }
+    ]
+}

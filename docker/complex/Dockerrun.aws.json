@@ -18,6 +18,19 @@
             "image": "fabiohb/multi-complex-worker",
             "hostname": "worker",
             "essentioal": false
+        },
+        {
+            "name": "nginx",
+            "image": "fabiohb/multi-complex-nginx",
+            "hostname": "nginx",
+            "essentioal": true,
+            "portMappings": [
+                {
+                    "hostPort": 80,
+                    "conteinerPort": 80
+                }
+            ],
+            "links": ["client", "server"]
         }
     ]
 }

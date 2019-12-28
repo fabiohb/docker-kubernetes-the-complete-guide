@@ -7,6 +7,6 @@ metadata:
 spec:
     containers:
         - name: client
-          image: fabiohb/multi-complex-client
+          image: stephengrider/multi-client
           ports:
             - containerPort: 3000
